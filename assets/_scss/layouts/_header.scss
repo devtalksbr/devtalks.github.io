@@ -7,6 +7,10 @@
   background-color: $on-dark;
   border-bottom: rem(1px) solid rgba($white, .1);
 
+  &__title {
+    display: none;
+  }
+
   &-nav {
     display: flex;
     align-items: center;
