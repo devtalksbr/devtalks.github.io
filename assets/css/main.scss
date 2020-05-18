@@ -8,6 +8,7 @@
 @import 'layouts/header';
 @import 'layouts/sidebar';
 @import 'layouts/main';
+@import 'layouts/section';
 
-@import 'modules/button';
-@import 'modules/search';
+@import 'modules/button/all';
+@import 'modules/search/all';

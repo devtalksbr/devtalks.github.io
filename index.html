@@ -4,3 +4,19 @@ slug: home
 title: "Talks de front-end, back-end e design | DevTalks"
 description: "O DevTalks é um projeto que reúne talks de desenvolvimento para fácil acesso e consumo, de forma organizada e categorizada."
 ---
+
+<section class="dt-l-section dt-l-section--talks">
+  <header class="dt-l-section-header">
+    <h2 class="dt-l-section-header__title">Últimas talks adicionadas</h2>
+  </header>
+
+  <div class="dt-l-section-content">
+    <ul>
+      {% for talk in site.talks %}
+      <li>
+        {% include components/cards/talk.html link=talk.url video=talk.video speaker=talk.speaker title=talk.title  %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

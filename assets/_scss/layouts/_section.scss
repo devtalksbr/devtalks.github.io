@@ -1,0 +1,19 @@
+.dt-l-section {
+  &-header {
+    margin-bottom: rem(24px);
+    
+    &__title {
+      margin: 0;
+      font-size: rem(16px);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
