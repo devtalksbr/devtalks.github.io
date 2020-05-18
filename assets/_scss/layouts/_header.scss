@@ -2,14 +2,10 @@
   display: flex;
   align-items: center;
   height: rem(80px);
-  padding: 0 rem(24px);
+  padding-left: 0;
+  padding-right: rem(24px);
   background-color: $on-dark;
   border-bottom: rem(1px) solid rgba($white, .1);
-  
-  @media (min-width: 1024px) {
-    padding-left: 0;
-    padding-right: rem(24px);
-  }
 
   &-nav {
     display: flex;
@@ -30,7 +26,12 @@
   }
 
   .dt-m-search {
+    display: none;
     margin-left: rem(48px);
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
 
     .dt-m-button {
       border-radius: 0 rem(4px) rem(4px) 0;
