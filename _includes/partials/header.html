@@ -1,3 +1,13 @@
 <header class="dt-l-header">
-  
+  <div class="dt-l-header-nav">
+    <button class="dt-l-header-nav__toggle">
+      <i class="material-icons">menu</i>
+    </button>
+
+    <a href="{{ site.url }}" class="dt-l-header-nav__logo">
+      <img src="/assets/img/logo.svg" alt="DevTalks">
+    </a>
+  </div>
+
+  {% include components/search.html %}
 </header>

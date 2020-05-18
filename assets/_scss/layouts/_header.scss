@@ -1,0 +1,24 @@
+.dt-l-header {
+  display: flex;
+  align-items: center;
+  padding: 0 rem(24px);
+  height: rem(80px);
+  background-color: rgba(#000, .2);
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    
+    &__toggle {
+      @extend .reset-button;
+      font-size: rem(24px);
+      color: $white;
+    }
+
+    &__logo {
+      display: block;
+      margin-left: rem(24px);
+    }
+  }
+
+}
