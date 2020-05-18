@@ -1,0 +1,53 @@
+.dt-m-button {
+  @extend .reset-button;
+  text-transform: uppercase;
+  transition: $transition;
+  font-weight: 500;
+
+  &:focus {
+    box-shadow: 0 0 0 rem(3px) rgba($assertive, .3);
+  }
+
+  // styles
+  &-filled {
+    background-color: $assertive;
+    color: $white;
+    
+    &:hover {
+      background-color: darken($assertive, 5%);
+    }
+  }
+
+  &-outlined {
+    border: rem(1px) solid $assertive;
+    color: $assertive; 
+
+    &:hover {
+      border-color: darken($assertive, 5%);
+    }
+  }
+
+  &-text {
+
+  }
+
+  // size
+
+  &--sm {
+    height: rem(32px);
+    padding: 0 rem(14px);
+    font-size: rem(12px);
+  }
+  
+  &--md {
+    height: rem(40px);
+    padding: 0 rem(14px);
+    font-size: rem(14px);
+  }
+
+  &--lg {
+    height: rem(54px);
+    padding: 0 rem(28px);
+    font-size: rem(14px);
+  }
+}

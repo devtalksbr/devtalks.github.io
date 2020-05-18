@@ -1,0 +1,22 @@
+.dt-m-search {
+  display: flex;
+  width: 100%;
+  
+  &__input {
+    @extend .reset-input;
+    width: 100%;
+    height: rem(40px);
+    max-width: rem(640px);
+    padding: 0 rem(16px);
+    background-color: $on-dark;
+    border: rem(1px) solid $border-dark;
+    border-radius: rem(4px) 0 0 rem(4px);
+    color: $white;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      border-color: $border-dark--hover;
+    }
+  }
+}
