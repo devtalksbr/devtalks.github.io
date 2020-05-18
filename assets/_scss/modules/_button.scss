@@ -2,7 +2,7 @@
   @extend .reset-button;
   text-transform: uppercase;
   transition: $transition;
-  font-weight: 500;
+  font-weight: 600;
 
   &:focus {
     box-shadow: 0 0 0 rem(3px) rgba($assertive, .3);

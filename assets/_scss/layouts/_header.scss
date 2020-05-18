@@ -10,7 +10,8 @@
   &-nav {
     display: flex;
     align-items: center;
-    width: rem(256px);
+    min-width: rem(256px);
+    max-width: rem(256px);
     padding: 0 rem(24px);
 
     &__toggle {

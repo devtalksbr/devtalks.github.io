@@ -1,0 +1,69 @@
+.dt-l-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #101A25;
+  
+  &-nav {
+    display: flex;
+    align-items: center;
+    width: rem(256px);
+    padding: rem(22px) rem(24px);
+    border-bottom: rem(1px) solid $border-dark;
+
+    &__toggle {
+      @extend .reset-button;
+      font-size: rem(24px);
+      color: $white;
+    }
+
+    &__logo {
+      display: block;
+      margin-left: rem(24px);
+    }
+  }
+
+  &-menu {
+    padding: rem(24px) 0;
+
+    &:not(:last-child) {
+      border-bottom: rem(1px) solid $border-dark;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: rem(8px);
+      padding: 0 rem(24px);
+      text-transform: uppercase;
+      color: rgba($white, .5);
+      font-size: rem(14px);
+      font-weight: 600;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: rem(8px) rem(24px);
+      text-decoration: none;
+
+      i {
+        display: block;
+        margin-right: rem(24px);
+        color: rgba($white, .5);
+      }
+
+      span {
+        color: rgba($white, .8);
+      }
+
+      &:hover {
+        background-color: rgba($white, .2);
+
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}
