@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  background-color: $dark;
+  color: $white;
+}
