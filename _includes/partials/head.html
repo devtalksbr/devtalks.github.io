@@ -6,4 +6,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Encode+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/{{ page.slug }}.css">
+
+  {% if jekyll.environment == "production" %}
+    {% include pixel/analytics.html %}
+  {% endif %}
 </head>
