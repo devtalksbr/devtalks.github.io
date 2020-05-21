@@ -1,13 +1,51 @@
 .dt-m-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+  
+  &-wrapper {
+    margin: rem(24px) rem(24px) 0;
 
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @media (min-width: 768px) {
+      margin: rem(48px) rem(48px) 0;
+    }
+
+    @media (min-width: 1280px) {
+      margin: rem(48px) rem(72px) 0;
+    }
+  }
+
+  &-talk {
+    &__header {
+      margin-bottom: rem(16px);
+      padding-bottom: rem(16px);
+      border-bottom: rem(1px) solid rgba($white, .2);
+    }
+
+    &__speaker {
+      margin: 0;
+      margin-bottom: rem(8px);
+      font-weight: 400;
+      font-size: rem(16px);
+      line-height: 1.2;
+
+      a {
+        text-decoration: none;
+        color: rgba($white, .8);
+      }
+    }
+
+    &__title {
+      margin: 0;
+      font-size: rem(32px);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    &__content {
+      max-width: rem(720px);
+
+      p {
+        line-height: 1.5;
+        opacity: .8;
+      }
+    }
   }
 }

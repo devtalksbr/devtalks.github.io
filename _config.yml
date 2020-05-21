@@ -5,6 +5,9 @@ collections:
   talks:
     output: true
     permalink: /:title
+  speakers:
+    output: true
+    permalink: /speakers/:title
 
 sass:
   sass_dir: assets/_scss

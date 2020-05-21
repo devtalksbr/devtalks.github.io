@@ -6,7 +6,24 @@
   {% include partials/sidebar.html class="hide" %}
 
   <main role="main" class="dt-l-main">
-    <div id="player" data-plyr-provider="{{ page.video.provider }}" data-plyr-embed-id="{{ page.video.id }}"></div>
+    <div class="dt-m-video">
+      <div class="dt-m-video-player" id="player" data-plyr-provider="{{ page.video.provider }}" data-plyr-embed-id="{{ page.video.id }}"></div>
+
+      <div class="dt-m-video-wrapper">
+        <article class="dt-m-video-talk">
+          <header class="dt-m-video-talk__header">
+            <h2 class="dt-m-video-talk__speaker"><a href="/palestrante/{{ page.speaker | slugify }}">{{ page.speaker }}</a></h2>
+            <h1 class="dt-m-video-talk__title">{{ page.title }}</h1>
+          </header>
+
+          {% include components/channel/info.html %}
+
+          <div class="dt-m-video-talk__content">
+            {{ content }}
+          </div>
+        </article>
+      </div>
+    </div>
   </main>
 
   <script src="/assets/js/single.js"></script>

@@ -14,7 +14,7 @@ description: "O DevTalks é um projeto que reúne talks de desenvolvimento para 
     <ul>
       {% for talk in site.talks %}
       <li>
-        {% include components/cards/talk.html link=talk.url video=talk.video speaker=talk.speaker title=talk.title  %}
+        {% include components/cards/talk.html link=talk.url video=talk.video.id speaker=talk.speaker title=talk.title  %}
       </li>
       {% endfor %}
     </ul>
