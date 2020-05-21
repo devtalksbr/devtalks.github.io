@@ -5,9 +5,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Encode+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/{{ page.slug }}.css">
+  <link rel="stylesheet" href="/assets/css/{{ page.layout }}.css">
 
   {% if jekyll.environment == "production" %}
     {% include pixel/analytics.html %}
+  {% endif %}
+
+  {% if page.layout == "single" %}
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css">
   {% endif %}
 </head>

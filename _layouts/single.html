@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include partials/head.html %}
+<body class="single">
+  {% include partials/header.html %}
+  {% include partials/sidebar.html class="hide" %}
+
+  <main role="main" class="dt-l-main">
+    <div id="player" data-plyr-provider="{{ page.video.provider }}" data-plyr-embed-id="{{ page.video.id }}"></div>
+  </main>
+
+  <script src="/assets/js/single.js"></script>
+</body>
+</html>

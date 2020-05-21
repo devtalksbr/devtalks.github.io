@@ -4,6 +4,10 @@
   left: 0;
   bottom: 0;
   background-color: #101A25;
+
+  &.hide + .dt-l-main {
+    margin-left: 0;
+  }
   
   &-nav {
     display: flex;

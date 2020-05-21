@@ -1,8 +1,10 @@
-url: "https://devtalks.com.br/"
+url: ""
 timezone: "America/Sao_Paulo"
 
 collections:
-  - talks
+  talks:
+    output: true
+    permalink: /:title
 
 sass:
   sass_dir: assets/_scss
