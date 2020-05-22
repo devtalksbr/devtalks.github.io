@@ -1,1 +1,1 @@
-console.log('teste');
+const player = new Plyr('#player');
