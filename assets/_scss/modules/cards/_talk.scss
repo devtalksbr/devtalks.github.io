@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: rem(320px);
   border-radius: rem(8px);
   overflow: hidden;
   background-color: $on-dark;
   text-decoration: none;
   color: $white;
+  transition: $transition;
 
   img {
     display: block;
