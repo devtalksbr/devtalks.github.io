@@ -5,10 +5,11 @@
 @import 'base/imports';
 @import 'base/base';
 
-@import 'layouts/header';
-@import 'layouts/sidebar';
-@import 'layouts/main';
-@import 'layouts/section';
+img {
+  width: 50vw;
+  height: auto;
 
-@import 'modules/button/all';
-@import 'modules/search/all';
+  @media (min-width: $desktop) {
+    width: 25vw;
+  }
+}

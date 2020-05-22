@@ -1,9 +1,0 @@
-{% if include.link %}
-  <a href="{{ include.link }}" class="dt-m-button dt-m-button-{{ include.style }} dt-m-button--{{ include.size }}">
-    <span>{{ include.content }}</span>
-  </a>
-{% else %}
-  <button type="{{ include.type }}" class="dt-m-button dt-m-button-{{ include.style }} dt-m-button--{{ include.size }}">
-    <span>{{ include.content }}</span>
-  </button>
-{% endif %}
