@@ -7,6 +7,10 @@
       font-size: rem(16px);
       font-weight: 600;
       text-transform: uppercase;
+
+      strong {
+        color: $assertive;
+      }
     }
   }
 

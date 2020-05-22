@@ -1,0 +1,7 @@
+.dt-m-related {
+  width: 100%;
+  
+  @media (min-width: $desktop) {
+    width: rem(320px);
+  }
+}

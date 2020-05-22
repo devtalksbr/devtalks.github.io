@@ -6,7 +6,7 @@
   {% include partials/sidebar.html class="hide" %}
 
   <main role="main" class="dt-l-main">
-    <div class="dt-m-video">
+    <section class="dt-m-video">
       <div class="dt-m-video-player" id="player" data-plyr-provider="{{ page.video.provider }}" data-plyr-embed-id="{{ page.video.id }}"></div>
 
       <div class="dt-m-video-wrapper">
@@ -23,7 +23,23 @@
           </div>
         </article>
       </div>
-    </div>
+    </section>
+    
+    <section class="dt-l-section dt-m-related">
+      <header class="dt-l-section-header">
+        <h3 class="dt-l-section-header__title">Mais talks sobre <strong>{{ page.categories | first }}</strong></h3>
+      </header>
+
+      <ul>
+        {% for talk in site.talks limit:6 %}
+          {% unless talk.url == page.url %}
+            <li>
+              {% include components/cards/talk.html link=talk.url video=talk.video.id speaker=talk.speaker title=talk.title %}
+            </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    </section>
   </main>
 
   <script src="/assets/js/single.js"></script>

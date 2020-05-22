@@ -1,18 +1,23 @@
 .dt-m-video {
-  
-  &-wrapper {
-    margin: rem(24px) rem(24px) 0;
+  width: 100%;
 
-    @media (min-width: 768px) {
-      margin: rem(48px) rem(48px) 0;
-    }
-
-    @media (min-width: 1280px) {
-      margin: rem(48px) rem(72px) 0;
+  &:not(:last-child) {
+    @media (min-width: $desktop) {
+      width: calc(100% - 368px);
     }
   }
 
   &-talk {
+    padding: rem(24px) rem(24px);
+
+    @media (min-width: $tablet) {
+      padding: rem(24px) rem(48px);
+    }
+
+    @media (min-width: $desktop-hd) {
+      padding: rem(48px) rem(72px);
+    }
+
     &__header {
       margin-bottom: rem(16px);
       padding-bottom: rem(16px);
@@ -34,9 +39,13 @@
 
     &__title {
       margin: 0;
-      font-size: rem(32px);
+      font-size: rem(24px);
       line-height: 1.2;
       font-weight: 600;
+      
+      @media (min-width: $desktop) {
+        font-size: rem(32px);
+      }
     }
 
     &__content {

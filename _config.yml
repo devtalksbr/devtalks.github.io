@@ -1,13 +1,17 @@
 url: ""
 timezone: "America/Sao_Paulo"
+lsi: true
 
 collections:
   talks:
     output: true
-    permalink: /:title
+    permalink: /talk/:title/
   speakers:
     output: true
-    permalink: /speakers/:title
+    permalink: /speakers/:title/
+  categories:
+    output: true
+    permalink: /categoria/:title/
 
 sass:
   sass_dir: assets/_scss
