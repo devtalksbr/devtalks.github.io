@@ -2,6 +2,7 @@
 layout: single
 title: "Segurança no desenvolvimento web"
 speaker: "Caroline Soares"
+channel: "Roadsec"
 date: 2019-09-19
 categories: [Segurança]
 video:
