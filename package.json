@@ -4,7 +4,8 @@
   "description": "![DevTalks Brasil](https://user-images.githubusercontent.com/3299130/82162052-fd836b80-9877-11ea-822a-3a0f049f758e.png)",
   "main": "index.js",
   "scripts": {
-    "start": "bundle exec jekyll serve"
+    "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental",
+    "build": "./node_modules/.bin/webpack | bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/devtalksbr/devtalksbr.github.io/issues"
   },
-  "homepage": "https://github.com/devtalksbr/devtalksbr.github.io#readme"
+  "homepage": "https://github.com/devtalksbr/devtalksbr.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
