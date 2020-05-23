@@ -14,7 +14,9 @@ collections:
     permalink: /categoria/:title/
 
 sass:
-  sass_dir: src/scss
+  load_paths: 
+    - src/scss
+    - node_modules
 
 exclude:
   - .sass-cache/

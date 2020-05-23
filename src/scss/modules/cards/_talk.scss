@@ -8,12 +8,21 @@
   text-decoration: none;
   color: $white;
   transition: $transition;
-
+  
+  &:hover {
+    background-color: $on-dark--hover;
+    
+    img {
+      opacity: .8;
+    }
+  }
+  
   img {
     display: block;
     width: 100%;
     height: rem(180px);
     object-fit: cover;
+    transition: $transition;
   }
 
   &-content {

@@ -1,5 +1,3 @@
-import plyr from './components/plyr';
+import Plyr from 'plyr';
 
-console.log(plyr());
-
-plyr('#player');
+const player = new Plyr('#player');

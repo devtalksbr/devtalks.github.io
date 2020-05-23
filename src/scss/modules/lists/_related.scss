@@ -4,4 +4,15 @@
   @media (min-width: $desktop) {
     width: rem(320px);
   }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: rem(24px);
+    }
+  }
 }
