@@ -1,6 +1,21 @@
 <head>
-  <title>{{ page.title }}</title>
+  <title>{% if page.layout == 'home' %}DevTalks{% else %}{{ page.title }} | DevTalks{% endif %}</title>
+  <meta name="title" content="{% if page.layout == 'home' %}DevTalks{% else %}{{ page.title }} | DevTalks{% endif %}">
   <meta name="description" content="{{ page.description }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="{% if page.layout == 'home' %}DevTalks{% else %}{{ page.title }} | DevTalks{% endif %}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="https://user-images.githubusercontent.com/3299130/82740510-be459680-9d1f-11ea-8f01-9e477977c81f.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="{% if page.layout == 'home' %}DevTalks{% else %}{{ page.title }} | {DevTalks{% endif %}">
+  <meta property="twitter:description" content="{{ page.description }}">
+  <meta property="twitter:image" content="https://user-images.githubusercontent.com/3299130/82740510-be459680-9d1f-11ea-8f01-9e477977c81f.png">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Encode+Sans:wght@400;600&display=swap" rel="stylesheet">
