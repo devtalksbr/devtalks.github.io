@@ -1,18 +1,43 @@
 .dt-m-related {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 rem(24px);
+
+  @media (min-width: $tablet) {
+    padding: 0 rem(48px);
+  }
   
   @media (min-width: $desktop) {
     width: rem(320px);
+    padding: 0;
   }
 
   ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: rem(-16px);
+    
+    @media (min-width: $desktop) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   li {
-    &:not(:last-child) {
-      margin-bottom: rem(24px);
+    width: 100%;
+    margin: rem(16px);
+
+    @media (min-width: $phablet) {
+      width: calc(50% - 32px);
+    }
+
+    @media (min-width: $tablet) {
+      width: calc(33.333% - 32px);
+    }
+
+    @media (min-width: $desktop) {
+      width: 100%;
     }
   }
 }
