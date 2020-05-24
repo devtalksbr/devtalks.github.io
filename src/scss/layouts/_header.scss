@@ -21,12 +21,18 @@
     &__toggle {
       @extend .reset-button;
       font-size: rem(24px);
+      line-height: 0;
       color: $white;
     }
 
     &__logo {
       display: block;
       margin-left: rem(24px);
+      height: rem(35px);
+      
+      img {
+        height: 100%;
+      }
     }
   }
 
@@ -42,5 +48,4 @@
       border-radius: 0 rem(4px) rem(4px) 0;
     }
   }
-
 }

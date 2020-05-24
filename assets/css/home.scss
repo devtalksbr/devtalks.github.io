@@ -6,26 +6,56 @@
 
 @import 'modules/cards/talk';
 
+.dt-l-sidebar {
+  @media (min-width: $tablet) {
+    transform: translateX(0);
+  }
+}
+
 .dt-l-main {
   margin-top: rem(48px);
+  margin-left: rem(24px);
   margin-right: rem(24px);
+
+  @media (min-width: $tablet) {
+    margin-left: rem(304px);
+    margin-right: rem(48px);
+  }
 }
 
 .dt-l-section--talks {
   ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     margin: rem(-8px);
 
     li {
       margin: rem(8px);
-      
+      width: 100%;
+
+      @media (min-width: $phablet) {
+        width: calc(50% - 16px);
+      }
+
       @media (min-width: $tablet) {
-        width: 33.333%;
+        width: 100%;
+      }
+      
+      @media (min-width: $tablet-pro) {
+        width: calc(50% - 16px);
+      }
+      
+      @media (min-width: $desktop) {
+        width: calc(33.333% - 16px);
       }
     
-      @media (min-width: $desktop) {
-        width: 25%;
+      @media (min-width: $desktop-hd) {
+        width: calc(25% - 16px);
+      }
+
+      @media (min-width: $desktop-xhd) {
+        width: calc(20% - 16px);
       }
     }
   }

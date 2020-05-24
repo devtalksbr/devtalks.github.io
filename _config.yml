@@ -5,13 +5,13 @@ lsi: true
 collections:
   talks:
     output: true
-    permalink: /talk/:title/
+    permalink: /:title/
   speakers:
     output: true
     permalink: /speakers/:title/
   categories:
     output: true
-    permalink: /categoria/:title/
+    permalink: /category/:title/
 
 sass:
   load_paths: 

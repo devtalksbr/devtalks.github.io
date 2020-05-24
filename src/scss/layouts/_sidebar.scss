@@ -3,7 +3,14 @@
   top: 0;
   left: 0;
   bottom: 0;
+  z-index: 1;
   background-color: #101A25;
+  transition: $transition;
+  transform: translateX(-100%);
+  
+  &.show {
+    transform: translateX(0);
+  }
   
   &-nav {
     display: flex;
@@ -15,12 +22,18 @@
     &__toggle {
       @extend .reset-button;
       font-size: rem(24px);
+      line-height: 0;
       color: $white;
     }
 
     &__logo {
       display: block;
       margin-left: rem(24px);
+      height: rem(35px);
+      
+      img {
+        height: 100%;
+      }
     }
   }
 
