@@ -1,8 +1,12 @@
 .dt-m-button {
   @extend .reset-button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   transition: $transition;
   font-weight: 600;
+  border-radius: rem(4px);
 
   &:focus {
     box-shadow: 0 0 0 rem(3px) rgba($assertive, .3);
@@ -15,6 +19,11 @@
     
     &:hover {
       background-color: darken($assertive, 5%);
+    }
+    
+    &:visited {
+      background-color: lighten($dark, 5%);
+      color: rgba($white, .5);
     }
   }
 

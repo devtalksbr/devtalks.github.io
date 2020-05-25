@@ -3,6 +3,9 @@ timezone: "America/Sao_Paulo"
 lsi: true
 
 collections:
+  channels:
+    output: true
+    permalink: /channel/:title
   talks:
     output: true
     permalink: /:title/

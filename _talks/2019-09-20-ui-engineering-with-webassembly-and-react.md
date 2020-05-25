@@ -2,7 +2,7 @@
 layout: single
 title: "UI Engineering with WebAssembly and React"
 speaker: "Raphael Amorim"
-channel: "FrontInSampa"
+channel: "Front In Sampa"
 date: 2019-09-20
 categories: [React, WebAssembly]
 video:

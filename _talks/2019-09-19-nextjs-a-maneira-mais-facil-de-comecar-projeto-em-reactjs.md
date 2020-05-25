@@ -2,7 +2,7 @@
 layout: single
 title: "NextJs - A maneira mais fácil de começar projeto em ReactJs"
 speaker: "Wharley Ornelas"
-channel: "FrontInSampa"
+channel: "Front In Sampa"
 date: 2019-09-19
 categories: [React, NextJS]
 video:

@@ -1,0 +1,20 @@
+<div class="dt-m-channel">
+  {% assign publisher = include.name %}
+  
+  {% for channel in site.data.channels %}
+    {% if channel.name == publisher %}
+      <div class="dt-m-channel-info">
+        <a href="{{ channel.url }}" target="_blank" rel="noopeneer">
+          <img src="{{ channel.image }}" alt="{{ include.name }}" class="dt-m-channel-info__img">
+        </a>
+
+        <div class="dt-m-channel-info__meta">
+          <span>Publicado por {{ channel.name }}</span>
+          <span>em {{ include.date | date: "%d de %b de %Y" }}</span>
+        </div>
+      </div>
+
+      {% include components/button.html link=channel.url style="filled" size="md" content="Inscrever-se" blank="true" %}
+    {% endif %}
+  {% endfor %}
+</div>
