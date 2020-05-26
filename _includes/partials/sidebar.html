@@ -9,41 +9,54 @@
     </a>
   </div>
 
-  <nav class="dt-l-sidebar-menu" role="navigation">
-    <a href="" class="dt-l-sidebar-menu__item">
-      <i class="material-icons">home</i>
-      <span>
-        Início
-      </span>
-    </a>
-    <a href="" class="dt-l-sidebar-menu__item">
-      <i class="material-icons">whatshot</i>
-      <span>
-        Em alta
-      </span>
-    </a>
-    <a href="" class="dt-l-sidebar-menu__item">
-      <i class="material-icons">video_library</i>
-      <span>
-        Canais
-      </span>
-    </a>
-  </nav>
+  <div class="dt-l-sidebar-content">
+    <nav class="dt-l-sidebar-menu" role="navigation">
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">home</i>
+        <span>
+          Início
+        </span>
+      </a>
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">whatshot</i>
+        <span>
+          Em alta
+        </span>
+      </a>
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">video_library</i>
+        <span>
+          Canais
+        </span>
+      </a>
+    </nav>
+  
+    <nav class="dt-l-sidebar-menu">
+      <h3 class="dt-l-sidebar-menu__title">Comunidade</h3>
+  
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">supervisor_account</i>
+        <span>
+          Palestrantes
+        </span>
+      </a>
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">event_available</i>
+        <span>
+          Eventos
+        </span>
+      </a>
+      <a href="" class="dt-l-sidebar-menu__item">
+        <i class="material-icons">forum</i>
+        <span>
+          Comunidades
+        </span>
+      </a>
+    </nav>
+  </div>
 
-  <nav class="dt-l-sidebar-menu">
-    <h3 class="dt-l-sidebar-menu__title">Comunidade</h3>
-
-    <a href="" class="dt-l-sidebar-menu__item">
-      <i class="material-icons">supervisor_account</i>
-      <span>
-        Palestrantes
-      </span>
-    </a>
-    <a href="" class="dt-l-sidebar-menu__item">
-      <i class="material-icons">event_available</i>
-      <span>
-        Eventos
-      </span>
-    </a>
-  </nav>
+  <div class="dt-l-sidebar-footer">
+    {% include components/button.html icon="github" link="https://github.com/devtalksbr/devtalksbr.github.io" size="lg" style="filled" content="Contribuir" %}
+    <p>MIT &copy; 2020 DevTalks</p>
+  </div>
 </aside>
